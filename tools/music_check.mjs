@@ -1,14 +1,19 @@
 // Headless check for js/game/music.js: renders every scene offline, then exercises the runtime path.
-//   PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers node tools/music_check.mjs
+//   node tools/music_check.mjs
+// Needs the optional `playwright` package and a Chromium build. Without them the check prints SKIP and exits 0,
+// so `npm test` works on a clean clone and in CI. Set REQUIRE_PLAYWRIGHT=1 to make a missing Playwright an error.
+//   npm install --no-save playwright && npx playwright install chromium && REQUIRE_PLAYWRIGHT=1 node tools/music_check.mjs
 import { createRequire } from 'node:module';
 import { execSync, spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import fs from 'node:fs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 const PORT = 8131;
-process.env.PLAYWRIGHT_BROWSERS_PATH ??= '/opt/pw-browsers';
+if (fs.existsSync('/opt/pw-browsers')) process.env.PLAYWRIGHT_BROWSERS_PATH ??= '/opt/pw-browsers';
+const PY = process.platform === 'win32' ? 'python' : 'python3';
 
 function loadPlaywright() {
   const require = createRequire(import.meta.url);
@@ -18,11 +23,20 @@ function loadPlaywright() {
   for (const t of tries) {
     try { return t(); } catch { /* next */ }
   }
-  throw new Error('playwright node module not found');
+  return null;
 }
 
-const { chromium } = loadPlaywright();
-const server = spawn('python3', ['serve.py', '--port', String(PORT)], { cwd: root, stdio: 'ignore' });
+const pw = process.env.SKIP_BROWSER_CHECKS ? null : loadPlaywright();
+if (!pw) {
+  if (process.env.REQUIRE_PLAYWRIGHT) {
+    console.log('FAIL: playwright node module not found');
+    process.exit(1);
+  }
+  console.log('SKIP: playwright is not installed, so the browser audio check was not run.');
+  process.exit(0);
+}
+const { chromium } = pw;
+const server = spawn(PY, ['serve.py', '--port', String(PORT)], { cwd: root, stdio: 'ignore' });
 let failed = [];
 const fail = (msg) => { failed.push(msg); console.log('  FAIL: ' + msg); };
 
