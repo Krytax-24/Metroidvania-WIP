@@ -1,0 +1,14 @@
+{
+  "name": "ashen-ascent",
+  "version": "2.0.0",
+  "description": "A gothic Metroidvania expedition game in plain HTML, CSS and JavaScript.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "python serve.py",
+    "test": "node tools/headless_smoke.mjs && node tools/gear_check.mjs && node tools/music_check.mjs && node tools/story_check.mjs && node tools/yard_check.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

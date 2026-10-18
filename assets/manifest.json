@@ -1,0 +1,3234 @@
+{
+ "version": 1,
+ "sprites": {
+  "gino": {
+   "image": "sprites/gino.png",
+   "cell": [
+    63,
+    62
+   ],
+   "anchor": [
+    20.0,
+    60
+   ],
+   "body": [
+    22,
+    36
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 9,
+     "fps": 9,
+     "loop": true
+    },
+    "run": {
+     "row": 1,
+     "frames": 8,
+     "fps": 14,
+     "loop": true
+    },
+    "jump_start": {
+     "row": 2,
+     "frames": 2,
+     "fps": 14,
+     "loop": false
+    },
+    "air": {
+     "row": 3,
+     "frames": 4,
+     "fps": 8,
+     "loop": true
+    },
+    "land": {
+     "row": 4,
+     "frames": 1,
+     "fps": 10,
+     "loop": false
+    },
+    "hit": {
+     "row": 5,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "death": {
+     "row": 6,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    },
+    "ledge": {
+     "row": 7,
+     "frames": 4,
+     "fps": 10,
+     "loop": true
+    },
+    "slide": {
+     "row": 8,
+     "frames": 5,
+     "fps": 16,
+     "loop": false
+    },
+    "atk1": {
+     "row": 9,
+     "frames": 7,
+     "fps": 24,
+     "loop": false
+    },
+    "atk2": {
+     "row": 10,
+     "frames": 5,
+     "fps": 22,
+     "loop": false
+    },
+    "atk3": {
+     "row": 11,
+     "frames": 7,
+     "fps": 22,
+     "loop": false
+    },
+    "heavy": {
+     "row": 12,
+     "frames": 8,
+     "fps": 20,
+     "loop": false
+    },
+    "air_atk": {
+     "row": 13,
+     "frames": 7,
+     "fps": 24,
+     "loop": false
+    },
+    "throw": {
+     "row": 14,
+     "frames": 7,
+     "fps": 20,
+     "loop": false
+    }
+   }
+  },
+  "gino_dagger": {
+   "image": "sprites/gino_dagger.png",
+   "cell": [
+    15,
+    16
+   ],
+   "anchor": [
+    6.5,
+    10
+   ],
+   "body": [
+    15,
+    4
+   ],
+   "anims": {
+    "fly": {
+     "row": 0,
+     "frames": 1,
+     "fps": 1,
+     "loop": true
+    },
+    "hit": {
+     "row": 1,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "knight": {
+   "image": "sprites/knight.png",
+   "cell": [
+    69,
+    56
+   ],
+   "anchor": [
+    27.4,
+    52
+   ],
+   "body": [
+    31,
+    35
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 14,
+     "fps": 10,
+     "loop": true
+    },
+    "run": {
+     "row": 1,
+     "frames": 8,
+     "fps": 14,
+     "loop": true
+    },
+    "walk": {
+     "row": 2,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "jump_start": {
+     "row": 3,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    },
+    "air": {
+     "row": 4,
+     "frames": 3,
+     "fps": 8,
+     "loop": true
+    },
+    "fall": {
+     "row": 5,
+     "frames": 3,
+     "fps": 8,
+     "loop": true
+    },
+    "hit": {
+     "row": 6,
+     "frames": 8,
+     "fps": 16,
+     "loop": false
+    },
+    "death": {
+     "row": 7,
+     "frames": 15,
+     "fps": 10,
+     "loop": false
+    },
+    "block": {
+     "row": 8,
+     "frames": 6,
+     "fps": 18,
+     "loop": false
+    },
+    "atk1": {
+     "row": 9,
+     "frames": 8,
+     "fps": 20,
+     "loop": false
+    },
+    "atk2": {
+     "row": 10,
+     "frames": 9,
+     "fps": 20,
+     "loop": false
+    },
+    "atk3": {
+     "row": 11,
+     "frames": 11,
+     "fps": 20,
+     "loop": false
+    }
+   }
+  },
+  "mage": {
+   "image": "sprites/mage.png",
+   "cell": [
+    121,
+    100
+   ],
+   "anchor": [
+    57.7,
+    100
+   ],
+   "body": [
+    34,
+    66
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 8,
+     "fps": 9,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 7,
+     "fps": 10,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 8,
+     "fps": 14,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    },
+    "atk1": {
+     "row": 6,
+     "frames": 7,
+     "fps": 18,
+     "loop": false
+    },
+    "atk2": {
+     "row": 7,
+     "frames": 9,
+     "fps": 18,
+     "loop": false
+    },
+    "charge": {
+     "row": 8,
+     "frames": 3,
+     "fps": 10,
+     "loop": true
+    }
+   }
+  },
+  "mage_fx": {
+   "image": "sprites/mage_fx.png",
+   "cell": [
+    81,
+    67
+   ],
+   "anchor": [
+    31.2,
+    67
+   ],
+   "body": [
+    39,
+    63
+   ],
+   "anims": {
+    "arrow": {
+     "row": 0,
+     "frames": 6,
+     "fps": 16,
+     "loop": true
+    },
+    "sphere": {
+     "row": 1,
+     "frames": 16,
+     "fps": 24,
+     "loop": false
+    }
+   }
+  },
+  "fire_mage": {
+   "image": "sprites/fire_mage.png",
+   "cell": [
+    123,
+    128
+   ],
+   "anchor": [
+    44.2,
+    128
+   ],
+   "body": [
+    28,
+    66
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 8,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 6,
+     "fps": 8,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 8,
+     "fps": 12,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 9,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 3,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 6,
+     "fps": 8,
+     "loop": false
+    },
+    "atk1": {
+     "row": 6,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    "atk2": {
+     "row": 7,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    "charge": {
+     "row": 8,
+     "frames": 12,
+     "fps": 12,
+     "loop": true
+    },
+    "flame": {
+     "row": 9,
+     "frames": 14,
+     "fps": 20,
+     "loop": false
+    }
+   }
+  },
+  "lightning_mage": {
+   "image": "sprites/lightning_mage.png",
+   "cell": [
+    128,
+    86
+   ],
+   "anchor": [
+    54.1,
+    86
+   ],
+   "body": [
+    23,
+    63
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 8,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 7,
+     "fps": 8,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 8,
+     "fps": 12,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 3,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 5,
+     "fps": 8,
+     "loop": false
+    },
+    "atk1": {
+     "row": 6,
+     "frames": 10,
+     "fps": 16,
+     "loop": false
+    },
+    "atk2": {
+     "row": 7,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    "charge": {
+     "row": 8,
+     "frames": 13,
+     "fps": 16,
+     "loop": true
+    }
+   }
+  },
+  "imp": {
+   "image": "sprites/imp.png",
+   "cell": [
+    32,
+    32
+   ],
+   "anchor": [
+    12.1,
+    32
+   ],
+   "body": [
+    21,
+    20
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 11,
+     "fps": 9,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 8,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "bat": {
+   "image": "sprites/bat.png",
+   "cell": [
+    32,
+    32
+   ],
+   "anchor": [
+    14.4,
+    27
+   ],
+   "body": [
+    29,
+    23
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 12,
+     "loop": true
+    },
+    "attack": {
+     "row": 1,
+     "frames": 10,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 2,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "chomper": {
+   "image": "sprites/chomper.png",
+   "cell": [
+    52,
+    49
+   ],
+   "anchor": [
+    31.2,
+    49
+   ],
+   "body": [
+    22,
+    40
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 8,
+     "fps": 9,
+     "loop": true
+    },
+    "attack": {
+     "row": 1,
+     "frames": 8,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 2,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "plague": {
+   "image": "sprites/plague.png",
+   "cell": [
+    56,
+    60
+   ],
+   "anchor": [
+    14.4,
+    60
+   ],
+   "body": [
+    44,
+    41
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 9,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 7,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "worm": {
+   "image": "sprites/worm.png",
+   "cell": [
+    64,
+    64
+   ],
+   "anchor": [
+    17.8,
+    64
+   ],
+   "body": [
+    26,
+    60
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 9,
+     "fps": 9,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 3,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "mushroom": {
+   "image": "sprites/mushroom.png",
+   "cell": [
+    73,
+    45
+   ],
+   "anchor": [
+    37.9,
+    45
+   ],
+   "body": [
+    30,
+    33
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 8,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 12,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 10,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 5,
+     "fps": 14,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 15,
+     "fps": 12,
+     "loop": false
+    },
+    "stun": {
+     "row": 5,
+     "frames": 18,
+     "fps": 10,
+     "loop": true
+    }
+   }
+  },
+  "blacksmith": {
+   "image": "sprites/blacksmith.png",
+   "cell": [
+    69,
+    59
+   ],
+   "anchor": [
+    29.6,
+    58
+   ],
+   "body": [
+    65,
+    55
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 7,
+     "fps": 8,
+     "loop": true
+    }
+   }
+  },
+  "slime_green": {
+   "image": "sprites/slime_green.png",
+   "cell": [
+    30,
+    29
+   ],
+   "anchor": [
+    14.5,
+    29
+   ],
+   "body": [
+    24,
+    14
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 8,
+     "fps": 8,
+     "loop": true
+    },
+    "move": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 2,
+     "frames": 8,
+     "fps": 12,
+     "loop": false
+    }
+   }
+  },
+  "knight_penitent": {
+   "image": "sprites/knight_penitent.png",
+   "cell": [
+    112,
+    82
+   ],
+   "anchor": [
+    30.8,
+    82
+   ],
+   "body": [
+    43,
+    64
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 7,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 7,
+     "fps": 14,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 2,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 6,
+     "fps": 9,
+     "loop": false
+    },
+    "block": {
+     "row": 6,
+     "frames": 5,
+     "fps": 12,
+     "loop": false
+    },
+    "attack": {
+     "row": 7,
+     "frames": 5,
+     "fps": 14,
+     "loop": false
+    },
+    "atk2": {
+     "row": 8,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    },
+    "atk3": {
+     "row": 9,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "knight_hollow": {
+   "image": "sprites/knight_hollow.png",
+   "cell": [
+    112,
+    82
+   ],
+   "anchor": [
+    30.8,
+    82
+   ],
+   "body": [
+    43,
+    64
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 7,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 7,
+     "fps": 14,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 2,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 6,
+     "fps": 9,
+     "loop": false
+    },
+    "block": {
+     "row": 6,
+     "frames": 5,
+     "fps": 12,
+     "loop": false
+    },
+    "attack": {
+     "row": 7,
+     "frames": 5,
+     "fps": 14,
+     "loop": false
+    },
+    "atk2": {
+     "row": 8,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    },
+    "atk3": {
+     "row": 9,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "knight_blight": {
+   "image": "sprites/knight_blight.png",
+   "cell": [
+    112,
+    82
+   ],
+   "anchor": [
+    30.8,
+    82
+   ],
+   "body": [
+    43,
+    64
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 7,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "run": {
+     "row": 2,
+     "frames": 7,
+     "fps": 14,
+     "loop": true
+    },
+    "air": {
+     "row": 3,
+     "frames": 6,
+     "fps": 10,
+     "loop": true
+    },
+    "hit": {
+     "row": 4,
+     "frames": 2,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 5,
+     "frames": 6,
+     "fps": 9,
+     "loop": false
+    },
+    "block": {
+     "row": 6,
+     "frames": 5,
+     "fps": 12,
+     "loop": false
+    },
+    "attack": {
+     "row": 7,
+     "frames": 5,
+     "fps": 14,
+     "loop": false
+    },
+    "atk2": {
+     "row": 8,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    },
+    "atk3": {
+     "row": 9,
+     "frames": 4,
+     "fps": 14,
+     "loop": false
+    }
+   }
+  },
+  "warrior": {
+   "image": "sprites/warrior.png",
+   "cell": [
+    76,
+    64
+   ],
+   "anchor": [
+    36.7,
+    64
+   ],
+   "body": [
+    23,
+    44
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 5,
+     "fps": 7,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 10,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 14,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 4,
+     "fps": 12,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "lamplighter": {
+   "image": "sprites/lamplighter.png",
+   "cell": [
+    48,
+    59
+   ],
+   "anchor": [
+    20.6,
+    58
+   ],
+   "body": [
+    46,
+    55
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 10,
+     "fps": 7,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 8,
+     "loop": true
+    }
+   }
+  },
+  "wisp": {
+   "image": "sprites/wisp.png",
+   "cell": [
+    18,
+    21
+   ],
+   "anchor": [
+    5.3,
+    20
+   ],
+   "body": [
+    10,
+    17
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 5,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 8,
+     "fps": 11,
+     "loop": true
+    },
+    "hit": {
+     "row": 2,
+     "frames": 2,
+     "fps": 6,
+     "loop": false
+    },
+    "death": {
+     "row": 3,
+     "frames": 2,
+     "fps": 4,
+     "loop": false
+    }
+   }
+  },
+  "rg_priest": {
+   "image": "sprites/rg_priest.png",
+   "cell": [
+    26,
+    32
+   ],
+   "anchor": [
+    15.5,
+    31
+   ],
+   "body": [
+    24,
+    29
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_monk": {
+   "image": "sprites/rg_monk.png",
+   "cell": [
+    24,
+    29
+   ],
+   "anchor": [
+    14.1,
+    28
+   ],
+   "body": [
+    22,
+    26
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_scholar": {
+   "image": "sprites/rg_scholar.png",
+   "cell": [
+    22,
+    32
+   ],
+   "anchor": [
+    11.9,
+    31
+   ],
+   "body": [
+    20,
+    29
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_shopkeep": {
+   "image": "sprites/rg_shopkeep.png",
+   "cell": [
+    24,
+    32
+   ],
+   "anchor": [
+    11.1,
+    31
+   ],
+   "body": [
+    22,
+    29
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_elder_f": {
+   "image": "sprites/rg_elder_f.png",
+   "cell": [
+    24,
+    26
+   ],
+   "anchor": [
+    14.0,
+    25
+   ],
+   "body": [
+    22,
+    23
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_elder_m": {
+   "image": "sprites/rg_elder_m.png",
+   "cell": [
+    20,
+    29
+   ],
+   "anchor": [
+    10.8,
+    28
+   ],
+   "body": [
+    18,
+    26
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_templar": {
+   "image": "sprites/rg_templar.png",
+   "cell": [
+    32,
+    32
+   ],
+   "anchor": [
+    10.2,
+    31
+   ],
+   "body": [
+    31,
+    30
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_druid": {
+   "image": "sprites/rg_druid.png",
+   "cell": [
+    26,
+    31
+   ],
+   "anchor": [
+    7.3,
+    30
+   ],
+   "body": [
+    24,
+    28
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    }
+   }
+  },
+  "rg_skeleton": {
+   "image": "sprites/rg_skeleton.png",
+   "cell": [
+    32,
+    31
+   ],
+   "anchor": [
+    15.3,
+    29
+   ],
+   "body": [
+    21,
+    27
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "rg_zombie": {
+   "image": "sprites/rg_zombie.png",
+   "cell": [
+    31,
+    30
+   ],
+   "anchor": [
+    13.3,
+    29
+   ],
+   "body": [
+    24,
+    27
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "rg_cultist": {
+   "image": "sprites/rg_cultist.png",
+   "cell": [
+    31,
+    32
+   ],
+   "anchor": [
+    16.6,
+    31
+   ],
+   "body": [
+    20,
+    30
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "rg_wraith": {
+   "image": "sprites/rg_wraith.png",
+   "cell": [
+    28,
+    32
+   ],
+   "anchor": [
+    16.4,
+    30
+   ],
+   "body": [
+    19,
+    29
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "rg_banshee": {
+   "image": "sprites/rg_banshee.png",
+   "cell": [
+    30,
+    32
+   ],
+   "anchor": [
+    12.9,
+    29
+   ],
+   "body": [
+    23,
+    27
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  },
+  "rg_reaper": {
+   "image": "sprites/rg_reaper.png",
+   "cell": [
+    32,
+    32
+   ],
+   "anchor": [
+    19.5,
+    31
+   ],
+   "body": [
+    30,
+    30
+   ],
+   "anims": {
+    "idle": {
+     "row": 0,
+     "frames": 4,
+     "fps": 3,
+     "loop": true
+    },
+    "walk": {
+     "row": 1,
+     "frames": 4,
+     "fps": 6,
+     "loop": true
+    },
+    "attack": {
+     "row": 2,
+     "frames": 6,
+     "fps": 12,
+     "loop": false
+    },
+    "hit": {
+     "row": 3,
+     "frames": 2,
+     "fps": 10,
+     "loop": false
+    },
+    "death": {
+     "row": 4,
+     "frames": 4,
+     "fps": 8,
+     "loop": false
+    }
+   }
+  }
+ },
+ "tiles": {
+  "crystal": {
+   "image": "tiles/crystal.png",
+   "rects": {
+    "Tree": [
+     0,
+     0,
+     77,
+     102
+    ],
+    "Pillar": [
+     78,
+     0,
+     55,
+     53
+    ],
+    "Fire": [
+     134,
+     0,
+     28,
+     28
+    ],
+    "Candlestick": [
+     163,
+     0,
+     26,
+     26
+    ],
+    "Crystal 01": [
+     190,
+     0,
+     26,
+     26
+    ],
+    "Crystal 02": [
+     217,
+     0,
+     26,
+     26
+    ],
+    "Crystal 03": [
+     244,
+     0,
+     26,
+     26
+    ],
+    "Crystal spike": [
+     271,
+     0,
+     26,
+     26
+    ],
+    "Rune stone": [
+     298,
+     0,
+     26,
+     26
+    ],
+    "Stand": [
+     325,
+     0,
+     26,
+     26
+    ],
+    "Crystal pile 01": [
+     352,
+     0,
+     52,
+     25
+    ],
+    "Signpost 01": [
+     405,
+     0,
+     23,
+     23
+    ],
+    "Signpost 04": [
+     429,
+     0,
+     23,
+     23
+    ],
+    "Stone 01": [
+     453,
+     0,
+     23,
+     23
+    ],
+    "Stone 02": [
+     477,
+     0,
+     23,
+     23
+    ],
+    "Table": [
+     0,
+     103,
+     23,
+     23
+    ],
+    "Crystal pile 02": [
+     24,
+     103,
+     58,
+     22
+    ],
+    "col_coin_01": [
+     83,
+     103,
+     18,
+     18
+    ],
+    "col_coin_02": [
+     102,
+     103,
+     18,
+     18
+    ],
+    "col_coin_03": [
+     121,
+     103,
+     18,
+     18
+    ],
+    "col_coin_04": [
+     140,
+     103,
+     18,
+     18
+    ],
+    "col_coin_05": [
+     159,
+     103,
+     18,
+     18
+    ],
+    "col_coin_06": [
+     178,
+     103,
+     18,
+     18
+    ],
+    "col_crystal": [
+     197,
+     103,
+     18,
+     18
+    ],
+    "col_life": [
+     216,
+     103,
+     18,
+     18
+    ],
+    "col_mana": [
+     235,
+     103,
+     18,
+     18
+    ],
+    "col_star": [
+     254,
+     103,
+     18,
+     18
+    ],
+    "col_locked_golden_treasure_box": [
+     273,
+     103,
+     18,
+     18
+    ],
+    "col_locked_silver_treasure_box": [
+     292,
+     103,
+     18,
+     18
+    ],
+    "top_a": [
+     311,
+     103,
+     16,
+     16
+    ],
+    "top_b": [
+     328,
+     103,
+     16,
+     16
+    ],
+    "top_c": [
+     345,
+     103,
+     16,
+     16
+    ],
+    "top_d": [
+     362,
+     103,
+     16,
+     16
+    ],
+    "tl": [
+     379,
+     103,
+     16,
+     16
+    ],
+    "tr": [
+     396,
+     103,
+     16,
+     16
+    ],
+    "fill": [
+     413,
+     103,
+     16,
+     16
+    ],
+    "fill_tl": [
+     430,
+     103,
+     16,
+     16
+    ],
+    "fill_tr": [
+     447,
+     103,
+     16,
+     16
+    ],
+    "wall_l": [
+     464,
+     103,
+     16,
+     16
+    ],
+    "cracked": [
+     481,
+     103,
+     16,
+     16
+    ],
+    "breakable": [
+     0,
+     127,
+     16,
+     16
+    ],
+    "seal": [
+     17,
+     127,
+     16,
+     16
+    ],
+    "lever": [
+     34,
+     127,
+     16,
+     16
+    ],
+    "barrel": [
+     51,
+     127,
+     16,
+     16
+    ],
+    "bonus": [
+     68,
+     127,
+     16,
+     16
+    ],
+    "ladder": [
+     85,
+     127,
+     16,
+     16
+    ],
+    "spike": [
+     102,
+     127,
+     16,
+     12
+    ],
+    "Rock 01": [
+     119,
+     127,
+     20,
+     10
+    ],
+    "Rock 02": [
+     140,
+     127,
+     20,
+     10
+    ],
+    "Rock 03": [
+     161,
+     127,
+     10,
+     10
+    ],
+    "Rock 04": [
+     172,
+     127,
+     10,
+     10
+    ],
+    "col_golden_key": [
+     183,
+     127,
+     18,
+     9
+    ],
+    "col_silver_key": [
+     202,
+     127,
+     18,
+     9
+    ]
+   },
+   "bg": [
+    "bg/crystal_0.png",
+    "bg/crystal_1.png"
+   ],
+   "decor": [
+    "Candlestick",
+    "Crystal 01",
+    "Crystal 02",
+    "Crystal 03",
+    "Crystal pile 01",
+    "Crystal pile 02",
+    "Crystal spike",
+    "Fire",
+    "Pillar",
+    "Rock 01",
+    "Rock 02",
+    "Rock 03",
+    "Rock 04",
+    "Rune stone",
+    "Signpost 01",
+    "Signpost 04",
+    "Stand",
+    "Tree",
+    "Stone 01",
+    "Stone 02",
+    "Table"
+   ]
+  },
+  "sky": {
+   "image": "tiles/sky.png",
+   "rects": {
+    "Portal": [
+     0,
+     0,
+     83,
+     88
+    ],
+    "Tree": [
+     84,
+     0,
+     65,
+     70
+    ],
+    "Part wall": [
+     150,
+     0,
+     46,
+     66
+    ],
+    "Abandoned columns": [
+     197,
+     0,
+     77,
+     52
+    ],
+    "Old brick wall": [
+     275,
+     0,
+     26,
+     51
+    ],
+    "Big stone": [
+     302,
+     0,
+     51,
+     26
+    ],
+    "Column": [
+     354,
+     0,
+     26,
+     26
+    ],
+    "Fence 01": [
+     381,
+     0,
+     26,
+     26
+    ],
+    "Fence 02": [
+     408,
+     0,
+     26,
+     26
+    ],
+    "Grass": [
+     435,
+     0,
+     26,
+     26
+    ],
+    "Magic stone 01": [
+     462,
+     0,
+     26,
+     26
+    ],
+    "Magic stone 02": [
+     0,
+     89,
+     26,
+     26
+    ],
+    "Old stone": [
+     27,
+     89,
+     23,
+     23
+    ],
+    "Pad": [
+     51,
+     89,
+     23,
+     23
+    ],
+    "Signpost 01": [
+     75,
+     89,
+     23,
+     23
+    ],
+    "Signpost 04": [
+     99,
+     89,
+     23,
+     23
+    ],
+    "Stone 01": [
+     123,
+     89,
+     23,
+     23
+    ],
+    "Stone 02": [
+     147,
+     89,
+     23,
+     23
+    ],
+    "col_coin_01": [
+     171,
+     89,
+     18,
+     18
+    ],
+    "col_coin_02": [
+     190,
+     89,
+     18,
+     18
+    ],
+    "col_coin_03": [
+     209,
+     89,
+     18,
+     18
+    ],
+    "col_coin_04": [
+     228,
+     89,
+     18,
+     18
+    ],
+    "col_coin_05": [
+     247,
+     89,
+     18,
+     18
+    ],
+    "col_coin_06": [
+     266,
+     89,
+     18,
+     18
+    ],
+    "col_life": [
+     285,
+     89,
+     18,
+     18
+    ],
+    "col_mana": [
+     304,
+     89,
+     18,
+     18
+    ],
+    "col_star": [
+     323,
+     89,
+     18,
+     18
+    ],
+    "col_locked_golden_treasure_box": [
+     342,
+     89,
+     18,
+     18
+    ],
+    "col_locked_silver_treasure_box": [
+     361,
+     89,
+     18,
+     18
+    ],
+    "top_a": [
+     380,
+     89,
+     16,
+     16
+    ],
+    "top_b": [
+     397,
+     89,
+     16,
+     16
+    ],
+    "top_c": [
+     414,
+     89,
+     16,
+     16
+    ],
+    "top_d": [
+     431,
+     89,
+     16,
+     16
+    ],
+    "tl": [
+     448,
+     89,
+     16,
+     16
+    ],
+    "tr": [
+     465,
+     89,
+     16,
+     16
+    ],
+    "fill": [
+     482,
+     89,
+     16,
+     16
+    ],
+    "fill_tl": [
+     0,
+     116,
+     16,
+     16
+    ],
+    "fill_tr": [
+     17,
+     116,
+     16,
+     16
+    ],
+    "wall_l": [
+     34,
+     116,
+     16,
+     16
+    ],
+    "cracked": [
+     51,
+     116,
+     16,
+     16
+    ],
+    "breakable": [
+     68,
+     116,
+     16,
+     16
+    ],
+    "seal": [
+     85,
+     116,
+     16,
+     16
+    ],
+    "lever": [
+     102,
+     116,
+     16,
+     16
+    ],
+    "barrel": [
+     119,
+     116,
+     16,
+     16
+    ],
+    "bonus": [
+     136,
+     116,
+     16,
+     16
+    ],
+    "ladder": [
+     153,
+     116,
+     16,
+     16
+    ],
+    "spike": [
+     170,
+     116,
+     16,
+     12
+    ],
+    "Rock 01": [
+     187,
+     116,
+     20,
+     10
+    ],
+    "Rock 02": [
+     208,
+     116,
+     20,
+     10
+    ],
+    "Rock 03": [
+     229,
+     116,
+     10,
+     10
+    ],
+    "col_golden_key": [
+     240,
+     116,
+     18,
+     9
+    ],
+    "col_silver_key": [
+     259,
+     116,
+     18,
+     9
+    ]
+   },
+   "bg": [
+    "bg/sky_0.png",
+    "bg/sky_1.png"
+   ],
+   "decor": [
+    "Abandoned columns",
+    "Big stone",
+    "Column",
+    "Fence 01",
+    "Fence 02",
+    "Grass",
+    "Magic stone 01",
+    "Magic stone 02",
+    "Old brick wall",
+    "Old stone",
+    "Pad",
+    "Part wall",
+    "Portal",
+    "Rock 01",
+    "Rock 02",
+    "Rock 03",
+    "Signpost 01",
+    "Signpost 04",
+    "Stone 01",
+    "Stone 02",
+    "Tree"
+   ]
+  },
+  "autumn": {
+   "image": "tiles/autumn.png",
+   "rects": {
+    "Tree 02": [
+     0,
+     0,
+     69,
+     82
+    ],
+    "Tree 01": [
+     70,
+     0,
+     68,
+     68
+    ],
+    "Bush 01": [
+     139,
+     0,
+     23,
+     23
+    ],
+    "Fence 01": [
+     163,
+     0,
+     23,
+     23
+    ],
+    "Fence 02": [
+     187,
+     0,
+     23,
+     23
+    ],
+    "Fire": [
+     211,
+     0,
+     23,
+     23
+    ],
+    "Rock 01": [
+     235,
+     0,
+     23,
+     23
+    ],
+    "Rock 02": [
+     259,
+     0,
+     23,
+     23
+    ],
+    "Signpost 01": [
+     283,
+     0,
+     23,
+     23
+    ],
+    "Signpost 04": [
+     307,
+     0,
+     23,
+     23
+    ],
+    "Stone 01": [
+     331,
+     0,
+     23,
+     23
+    ],
+    "Stone 02": [
+     355,
+     0,
+     23,
+     23
+    ],
+    "Stone 03": [
+     379,
+     0,
+     23,
+     23
+    ],
+    "col_coin_01": [
+     403,
+     0,
+     18,
+     18
+    ],
+    "col_coin_02": [
+     422,
+     0,
+     18,
+     18
+    ],
+    "col_coin_03": [
+     441,
+     0,
+     18,
+     18
+    ],
+    "col_coin_04": [
+     460,
+     0,
+     18,
+     18
+    ],
+    "col_coin_05": [
+     479,
+     0,
+     18,
+     18
+    ],
+    "col_coin_06": [
+     0,
+     83,
+     18,
+     18
+    ],
+    "col_crystal": [
+     19,
+     83,
+     18,
+     18
+    ],
+    "col_life": [
+     38,
+     83,
+     18,
+     18
+    ],
+    "col_star": [
+     57,
+     83,
+     18,
+     18
+    ],
+    "col_locked_golden_treasure_box": [
+     76,
+     83,
+     18,
+     18
+    ],
+    "col_locked_silver_treasure_box": [
+     95,
+     83,
+     18,
+     18
+    ],
+    "top_a": [
+     114,
+     83,
+     16,
+     16
+    ],
+    "top_b": [
+     131,
+     83,
+     16,
+     16
+    ],
+    "top_c": [
+     148,
+     83,
+     16,
+     16
+    ],
+    "top_d": [
+     165,
+     83,
+     16,
+     16
+    ],
+    "tl": [
+     182,
+     83,
+     16,
+     16
+    ],
+    "tr": [
+     199,
+     83,
+     16,
+     16
+    ],
+    "fill": [
+     216,
+     83,
+     16,
+     16
+    ],
+    "fill_tl": [
+     233,
+     83,
+     16,
+     16
+    ],
+    "fill_tr": [
+     250,
+     83,
+     16,
+     16
+    ],
+    "wall_l": [
+     267,
+     83,
+     16,
+     16
+    ],
+    "cracked": [
+     284,
+     83,
+     16,
+     16
+    ],
+    "breakable": [
+     301,
+     83,
+     16,
+     16
+    ],
+    "seal": [
+     318,
+     83,
+     16,
+     16
+    ],
+    "lever": [
+     335,
+     83,
+     16,
+     16
+    ],
+    "barrel": [
+     352,
+     83,
+     16,
+     16
+    ],
+    "bonus": [
+     369,
+     83,
+     16,
+     16
+    ],
+    "ladder": [
+     386,
+     83,
+     16,
+     16
+    ],
+    "spike": [
+     403,
+     83,
+     16,
+     12
+    ],
+    "Bush 02": [
+     420,
+     83,
+     23,
+     12
+    ],
+    "Bush 03": [
+     444,
+     83,
+     23,
+     12
+    ],
+    "Rock 03": [
+     468,
+     83,
+     23,
+     12
+    ],
+    "Rock 04": [
+     0,
+     102,
+     23,
+     12
+    ],
+    "Rock 05": [
+     24,
+     102,
+     12,
+     12
+    ],
+    "Rock 06": [
+     37,
+     102,
+     12,
+     12
+    ],
+    "Rock 07": [
+     50,
+     102,
+     12,
+     12
+    ],
+    "Rock 08": [
+     63,
+     102,
+     12,
+     12
+    ],
+    "col_golden_key": [
+     76,
+     102,
+     18,
+     9
+    ],
+    "col_silver_key": [
+     95,
+     102,
+     18,
+     9
+    ]
+   },
+   "bg": [
+    "bg/autumn_0.png",
+    "bg/autumn_1.png"
+   ],
+   "decor": [
+    "Bush 01",
+    "Bush 02",
+    "Bush 03",
+    "Fence 01",
+    "Fence 02",
+    "Fire",
+    "Rock 01",
+    "Rock 02",
+    "Rock 03",
+    "Rock 04",
+    "Rock 05",
+    "Rock 06",
+    "Rock 07",
+    "Rock 08",
+    "Signpost 01",
+    "Signpost 04",
+    "Stone 01",
+    "Stone 02",
+    "Stone 03",
+    "Tree 01",
+    "Tree 02"
+   ]
+  }
+ },
+ "icons": {
+  "image": "ui/items.png",
+  "cell": 32,
+  "names": {
+   "dagger": [
+    0,
+    0
+   ],
+   "short sword": [
+    1,
+    0
+   ],
+   "short sword 2": [
+    2,
+    0
+   ],
+   "long sword": [
+    3,
+    0
+   ],
+   "bastard sword": [
+    4,
+    0
+   ],
+   "zweihander": [
+    5,
+    0
+   ],
+   "sanguine dagger": [
+    6,
+    0
+   ],
+   "magic dagger": [
+    7,
+    0
+   ],
+   "crystal sword": [
+    8,
+    0
+   ],
+   "evil sword": [
+    9,
+    0
+   ],
+   "flame sword": [
+    10,
+    0
+   ],
+   "wide short sword": [
+    0,
+    1
+   ],
+   "wide long sword": [
+    1,
+    1
+   ],
+   "rapier": [
+    2,
+    1
+   ],
+   "long rapier": [
+    3,
+    1
+   ],
+   "flamberge": [
+    4,
+    1
+   ],
+   "large flamberge": [
+    5,
+    1
+   ],
+   "great sword": [
+    6,
+    1
+   ],
+   "shotel": [
+    0,
+    2
+   ],
+   "scimitar": [
+    1,
+    2
+   ],
+   "large scimitar": [
+    2,
+    2
+   ],
+   "great scimitar": [
+    3,
+    2
+   ],
+   "kukri": [
+    4,
+    2
+   ],
+   "hand axe": [
+    0,
+    3
+   ],
+   "battle axe": [
+    1,
+    3
+   ],
+   "halberd": [
+    2,
+    3
+   ],
+   "great axe": [
+    3,
+    3
+   ],
+   "giant axe": [
+    4,
+    3
+   ],
+   "hatchet": [
+    5,
+    3
+   ],
+   "woodcutter's axe": [
+    6,
+    3
+   ],
+   "blacksmiths hammer": [
+    0,
+    4
+   ],
+   "short warhammer": [
+    1,
+    4
+   ],
+   "long warhammer": [
+    2,
+    4
+   ],
+   "hammer": [
+    3,
+    4
+   ],
+   "great hammer": [
+    4,
+    4
+   ],
+   "mace 1": [
+    0,
+    5
+   ],
+   "mace 2": [
+    1,
+    5
+   ],
+   "great mace": [
+    2,
+    5
+   ],
+   "spiked bat": [
+    3,
+    5
+   ],
+   "spear": [
+    0,
+    6
+   ],
+   "short spear": [
+    1,
+    6
+   ],
+   "pitchfork": [
+    2,
+    6
+   ],
+   "trident": [
+    3,
+    6
+   ],
+   "magic spear": [
+    4,
+    6
+   ],
+   "flail 1": [
+    0,
+    7
+   ],
+   "flail 2": [
+    1,
+    7
+   ],
+   "flail 3": [
+    2,
+    7
+   ],
+   "club": [
+    0,
+    8
+   ],
+   "spiked club": [
+    1,
+    8
+   ],
+   "great club": [
+    2,
+    8
+   ],
+   "club with nails": [
+    3,
+    8
+   ],
+   "crossbow": [
+    0,
+    9
+   ],
+   "short bow": [
+    1,
+    9
+   ],
+   "long bow": [
+    2,
+    9
+   ],
+   "long bow 2": [
+    3,
+    9
+   ],
+   "large crossbow": [
+    4,
+    9
+   ],
+   "crystal staff": [
+    0,
+    10
+   ],
+   "holy staff": [
+    1,
+    10
+   ],
+   "druid staff": [
+    2,
+    10
+   ],
+   "blue staff": [
+    3,
+    10
+   ],
+   "golden staff": [
+    4,
+    10
+   ],
+   "red crystal staff": [
+    5,
+    10
+   ],
+   "flame staff": [
+    6,
+    10
+   ],
+   "blue crystal staff": [
+    7,
+    10
+   ],
+   "cross staff": [
+    8,
+    10
+   ],
+   "saint's staff": [
+    9,
+    10
+   ],
+   "buckler": [
+    0,
+    11
+   ],
+   "kite shield": [
+    1,
+    11
+   ],
+   "cross shield": [
+    2,
+    11
+   ],
+   "dark shield": [
+    3,
+    11
+   ],
+   "round shield": [
+    4,
+    11
+   ],
+   "buckler 2": [
+    5,
+    11
+   ],
+   "large shield": [
+    6,
+    11
+   ],
+   "cloth armor": [
+    0,
+    12
+   ],
+   "leather armor": [
+    1,
+    12
+   ],
+   "robe": [
+    2,
+    12
+   ],
+   "chain mail": [
+    3,
+    12
+   ],
+   "scale mail": [
+    4,
+    12
+   ],
+   "chest plate": [
+    5,
+    12
+   ],
+   "cloth gloves": [
+    0,
+    13
+   ],
+   "leather gloves": [
+    1,
+    13
+   ],
+   "blue cloth gloves": [
+    2,
+    13
+   ],
+   "gauntlets": [
+    3,
+    13
+   ],
+   "shoes": [
+    0,
+    14
+   ],
+   "leather boots": [
+    1,
+    14
+   ],
+   "high blue boots": [
+    2,
+    14
+   ],
+   "greaves": [
+    3,
+    14
+   ],
+   "cloth hood": [
+    0,
+    15
+   ],
+   "leather helm": [
+    1,
+    15
+   ],
+   "wide-brimmed hat": [
+    2,
+    15
+   ],
+   "chain mail coif": [
+    3,
+    15
+   ],
+   "helm": [
+    4,
+    15
+   ],
+   "helm with chain mail": [
+    5,
+    15
+   ],
+   "plate helm 1": [
+    6,
+    15
+   ],
+   "plate helm 2": [
+    7,
+    15
+   ],
+   "red pendant": [
+    0,
+    16
+   ],
+   "metal pendant": [
+    1,
+    16
+   ],
+   "crystal pendant": [
+    2,
+    16
+   ],
+   "disc pendant": [
+    3,
+    16
+   ],
+   "cross pendant": [
+    4,
+    16
+   ],
+   "stone pendant": [
+    5,
+    16
+   ],
+   "ankh": [
+    6,
+    16
+   ],
+   "gold emerald ring": [
+    0,
+    17
+   ],
+   "gold band ring": [
+    1,
+    17
+   ],
+   "green signet ring": [
+    2,
+    17
+   ],
+   "ruby ring": [
+    3,
+    17
+   ],
+   "sapphire ring": [
+    4,
+    17
+   ],
+   "onyx ring": [
+    5,
+    17
+   ],
+   "gold signet ring": [
+    0,
+    18
+   ],
+   "silver signet ring": [
+    1,
+    18
+   ],
+   "jade ring": [
+    2,
+    18
+   ],
+   "twisted gold ring": [
+    4,
+    18
+   ],
+   "twisted metal ring": [
+    5,
+    18
+   ],
+   "purple potion": [
+    0,
+    19
+   ],
+   "red potion": [
+    1,
+    19
+   ],
+   "brown vial": [
+    2,
+    19
+   ],
+   "large dark potion": [
+    3,
+    19
+   ],
+   "green potion": [
+    4,
+    19
+   ],
+   "black potion": [
+    0,
+    20
+   ],
+   "bright green potion": [
+    1,
+    20
+   ],
+   "pink vial": [
+    2,
+    20
+   ],
+   "blue potion": [
+    3,
+    20
+   ],
+   "orange potion": [
+    4,
+    20
+   ],
+   "scroll": [
+    0,
+    21
+   ],
+   "book": [
+    1,
+    21
+   ],
+   "red book": [
+    2,
+    21
+   ],
+   "dark tome": [
+    3,
+    21
+   ],
+   "tome": [
+    4,
+    21
+   ],
+   "tome 2": [
+    5,
+    21
+   ],
+   "scroll 2": [
+    6,
+    21
+   ],
+   "page": [
+    7,
+    21
+   ],
+   "gold key": [
+    0,
+    22
+   ],
+   "ornate key": [
+    1,
+    22
+   ],
+   "metal key": [
+    2,
+    22
+   ],
+   "primitive key": [
+    3,
+    22
+   ],
+   "arrow": [
+    0,
+    23
+   ],
+   "arrows": [
+    1,
+    23
+   ],
+   "bolt": [
+    2,
+    23
+   ],
+   "bolts": [
+    3,
+    23
+   ],
+   "coin": [
+    0,
+    24
+   ],
+   "small stacks of coins": [
+    1,
+    24
+   ],
+   "large stacks of coins": [
+    2,
+    24
+   ],
+   "coin purse": [
+    3,
+    24
+   ],
+   "cheese": [
+    0,
+    25
+   ],
+   "bread": [
+    1,
+    25
+   ],
+   "apple": [
+    2,
+    25
+   ],
+   "bottle of beer": [
+    3,
+    25
+   ],
+   "bottle of water": [
+    4,
+    24
+   ]
+  }
+ }
+}

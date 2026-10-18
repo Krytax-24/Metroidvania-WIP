@@ -1,0 +1,28 @@
+# Dependencies and tooling
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Source art. Never commit the original packs (see CREDITS.md).
+Game Assets/
+*.zip
+*.rar
+*.7z
+*.psd
+*.aseprite
+
+# Output and scratch
+_site/
+dist/
+*.log
+.cache/
+tmp/
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
